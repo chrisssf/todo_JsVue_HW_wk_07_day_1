@@ -1,0 +1,10 @@
+li.low {
+  /* border-width: 5p;
+  border-color: black; */
+  background-color: yellow;
+
+}
+
+li.high {
+  background-color: red;
+}
