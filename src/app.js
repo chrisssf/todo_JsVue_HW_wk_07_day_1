@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       toDo: [
         {name: "buy toilet paper", priority: "low"},
         {name: "eat caaaaake", priority: "low"},
-        {name: "reflect on life choices", priority: "low"}
+        {name: "reflect on life choices", priority: "high"}
       ],
       newTask: {name: "", priority: ""}
     },

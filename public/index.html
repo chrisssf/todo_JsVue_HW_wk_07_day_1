@@ -13,10 +13,13 @@
         <input type="text" id="add-task" v-model="newTask.name" required>
         <input type="radio" name="priority" value="low" v-model="newTask.priority" required> Low
         <input type="radio" name="priority" value="high" v-model="newTask.priority" required>High
-        <input type="submit" value="Add Task">
+        <input type="submit" value="Add Task" class="button">
       </form>
       <ul>
-        <li v-for="task in toDo" v-bind:class="givePriority(task)">{{ task.name }}</li>
+        <li v-for="task in toDo" v-bind:class="givePriority(task)">
+          <span>{{ task.name }}</span>
+          <span id="high-message" v-if="task.priority === 'high'">Do it NOWWWWWW!!!!!!</span>
+        </li>
       </ul>
     </div>
   </body>
